@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #ff74a7;
+        }
+        header {
+            background: #333;
+            color: #f195cf;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        nav a {
+            color: #ffa0dc;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+        }
+        .main-content {
+            flex: 3;
+            background: #ff47af;
+            padding: 1rem;
+            margin-right: 1rem;
+        }
+        .sidebar {
+            flex: 1;
+            background: #dc4799;
+            padding: 1rem;
+        }
+        footer {
+            background: #000000;
+            color: #ff9fda;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 1rem;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Simple Blog</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="main-content">
+            <h2>Blog Post Title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis. Cras vel justo ac nulla efficitur fringilla. Curabitur pulvinar luctus sem.</p>
+        </div>
+        <div class="sidebar">
+            <h3>About Me</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+            <h3>Links</h3>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>Contact us: email@example.com | Credits: My Simple Blog</p>
+    </footer>
+</body>
+</html>

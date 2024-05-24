@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blog Post Submission Form</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color:#e8ea55;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            form {
+                background-color: #fffde7;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                width: 50%;
+                max-width: 600px;
+                box-sizing: border-box;
+            }
+            h2 {
+                text-align: center;
+                color: #fbc02d;
+            }
+            input[type=text], select, textarea {
+                width: 100%;
+                padding: 15px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical;
+                background-color: #fffde7;
+            }
+            input[type=submit] {
+                background-color: #fbc02d;
+                color: white;
+                padding: 15px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                text-align: center;
+                width: 100%;
+                font-size: 16px;
+            }
+            input[type=submit]:hover {
+                background-color: #f9a825;
+            }
+            label {
+                color: #000000;
+                font-weight: bold;
+            }
+            button {
+                background-color: #fbc02d;
+                color: white;
+                padding: 15px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                text-align: center;
+                width: 100%;
+                font-size: 16px;
+            }
+            button:hover {
+                background-color: #f9a825;
+            }
+        </style>
+    </head>
+    <body>
+        <form id="blogPostForm">
+            <h2>Blog Post Submission Form</h2>
+            <label for="title">Blog Post Title</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="author">Author's Name</label>
+            <input type="text" id="author" name="author" required>
+
+            <label for="content">Blog Post Content</label>
+            <textarea id="content" name="content" style="height:200px" required></textarea>
+
+            <label for="category">Level of Experience</label>
+            <select id="category" name="category">
+                <option value="noob">Noob</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="superfan master">Superfan Master</option>
+            </select>
+
+            <button type="button" onclick="alert('Form submitted!')">Submit</button>
+        </form>
+    </body>
+</html>
